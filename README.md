@@ -6,7 +6,6 @@
 
 <p>el-cron是基于Vue.js和element ui实现crontab表达式的UI组件，支持多种特性，可以方便、快捷直观地定义cron表达式，并支持给定开始时间后的执行时间点，方便排除错误。</p>
 
-* [gitee: https://gitee.com/toktok/easy-cron](https://gitee.com/toktok/easy-cron)
 
 #### 2. 使用说明
 
@@ -32,10 +31,12 @@ hideSecond | Boolean| 是否隐藏参数<code>秒</code>和<code>年</code>设�
 hideYear | Boolean| 是否隐藏参数<code>年</code>设置，如果隐藏，那么参数<code>年</code>将会全部忽略掉
 remote | Function| 获取预览执行时间列表的函数，格式为：remote (<code>cron值</code>, <code>time时间戳</code>, <code>cb回调函数</code>)
 
-![image](https://gitee.com/toktok/easy-cron/raw/master/docs/pic-1.jpg)
-![image](https://gitee.com/toktok/easy-cron/raw/master/docs/pic-2.jpg)
-![image](https://gitee.com/toktok/easy-cron/raw/master/docs/pic-3.jpg)
-![image](https://gitee.com/toktok/easy-cron/raw/master/docs/pic-4.jpg)
+<p>依赖组件列表：</p>
+
+* [element-ui-2.14.1](https://element.eleme.cn/#/zh-CN)
+* [vue.js-2.6.1](https://cn.vuejs.org/)
+* [cron-parser-2.18.0](https://www.npmjs.com/package/cron-parser)
+* [debounce-1.2.0](https://www.npmjs.com/package/debounce)
 
 
 3.1 支持格式

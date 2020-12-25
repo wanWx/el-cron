@@ -87,7 +87,6 @@ export default {
   },
   computed: {
     disableChoice () {
-      console.log(this.day)
       return (this.day && this.day !== '?') || this.disabled
     }
   },
