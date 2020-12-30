@@ -11,7 +11,13 @@
 
 直接使用el-cron组件
 ```
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 import elCron from 'el-cron'
+import 'el-cron/lib/el-cron.css'
+
+Vue.use(elCron)
+Vue.use(ElementUI);
 ...
 <div>
   <el-cron style="width: 700px;"
@@ -53,21 +59,7 @@ remote | Function| 获取预览执行时间列表的函数，格式为：remote 
 └───────────────────────── second (0 - 59) (可选)
 ```
 
-#### 4. 项目依赖
-由于项目基于`element ui`封装，所以需搭配`element ui`使用
-```
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
-...
-Vue.use(ElementUI);
-
-new Vue({
-  el: '#app',
-  render: h => h(App)
-});
-```
-
-#### 5. 参考项目
+#### 4. 参考项目
 
 
 <p>本组件实现参考以下多位大佬：</p>
